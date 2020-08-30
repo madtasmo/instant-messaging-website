@@ -36,7 +36,7 @@
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  height: 35rem;
+  height: 39rem;
   width:75rem;
 }
 .messagescontainer{
@@ -47,8 +47,8 @@
   width: 100%;
   height: 90%;
   box-sizing:border-box;
-  overflow:auto;
-  
+  overflow-y:auto;
+  overflow-x:hidden;
   
 }
 .textmessagecontainer{
@@ -88,18 +88,30 @@
 .tablebreak{
   display: table;
   table-layout: fixed;
-  width: 40%;
+  width: 30%;
   word-wrap: break-word;
 
+}
+.tablebreak2{
+  display: table;
+  table-layout: fixed;
+  width: 30%;
+  word-wrap: break-word;
+  
+  
+  
 }
 .ingoingmessage{
   
 }
-.message{
-  border-radius: 15px 30px 30px 30px;
+.outgoingmessage{
+  transform: rotate(180deg);
+}
+.imessage{
+  border-radius: 10px 30px 30px 30px;
   background: #282c34;
   color: #ccc;
-  padding: 10px ;
+  padding: 14px ;
   position:relative;
   margin:1px ;
   left:50px;
@@ -107,6 +119,20 @@
   width:fit-content;
   font-size: large;
   
+}
+.omessage{
+  border-radius: 10px 30px 30px 30px;
+  background: #282c34;
+  color: #ccc;
+  padding: 14px ;
+  position:relative;
+  margin:1px ;
+  left:50px;
+  height:10%;
+  width:fit-content;
+  font-size: large;
+  transform: rotate(180deg);
+
 }
 .timestamp{
   position:relative;
@@ -116,6 +142,16 @@
   left:50px;
   
 }
+.timestamp2{
+  position:absolute;
+  margin:1px ;
+  font-size: small;
+  color: rgba(70, 70, 70, 0.938);
+  left:50px;
+  transform: rotate(180deg);
+  
+  
+}
 .user{
   font-size: large;
   position:relative;
@@ -123,10 +159,26 @@
   
   left:50px;
 }
+.user2{
+  transform: rotate(180deg);
+  font-size: large;
+  position:absolute;
+  margin:5px ;
+  
+  left:50px;
+}
 .avatar{
+  
   width:40px;
   border-radius: 50%;
   position:absolute;
+}
+.avatar2{
+  transform: rotate(180deg);
+  width:40px;
+  border-radius: 50%;
+  position:absolute;
+  bottom:10px;
 }
 
 
